@@ -1,0 +1,29 @@
+{
+	"name": "yng/database",
+	"type": "library",
+	"license": "Apache-2.0",
+	"homepage": "https://www.chinaqe.cn",
+	"description": "YngPHP数据库操作组件！",
+	"authors": [
+		{
+			"name": "yng"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Yng\\Database\\": "src/"
+		}
+	},
+	"require": {
+		"php": "^7.4|^8.0",
+		"ext-pdo": "*",
+		"ext-json": "*"
+	},
+	"extra": {
+		"yng": {
+			"config": {
+				"database": "publish/database.php"
+			}
+		}
+	}
+}
