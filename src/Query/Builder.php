@@ -517,7 +517,7 @@ class Builder
      */
     public function first(array $columns = ['*'])
     {
-        return $this->connector->run($this->toSql($columns), $this->bindings)->fetch(\PDO::FETCH_ASSOC);
+        return $this->connector->run($this->limit(1)->toSql($columns), $this->bindings)->fetch(\PDO::FETCH_ASSOC);
     }
 
     /**

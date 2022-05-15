@@ -9,15 +9,15 @@ return [
             //可以使用dsn来配置更多参数，会优先使用该参数
             'dsn'      => '',
             //主机地址
-            'host'     => env('database.host', 'localhost'),
+            'host'     => env('db_host', 'localhost'),
             //数据库用户名
-            'user'     => env('database.user', 'user'),
+            'user'     => env('db_username', 'user'),
             //数据库密码
-            'password' => env('database.pass', 'pass'),
+            'password' => env('db_password', 'pass'),
             //数据库名
-            'database' => env('database.dbname', 'name'),
+            'database' => env('db_database', 'name'),
             //端口
-            'port'     => env('database.port', 3306),
+            'port'     => env('db_port', 3306),
             //额外设置
             'options'  => [],
             //编码
